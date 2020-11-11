@@ -95,6 +95,8 @@ If the point cloud is not projected properly, you will lose many points and perf
 You may process a rosbag using the following command:
 
 ```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
 roslaunch lego_loam_bor run.launch rosbag:=/path/to/your/rosbag lidar_topic:=/velodyne_points
 ```
 
